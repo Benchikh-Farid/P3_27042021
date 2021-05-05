@@ -1,0 +1,87 @@
+.reserve-head{
+    background-color: #f5f4f4;
+    padding: 1.5em;
+    text-align: center;
+    .sub-head{
+        padding-top: 2em;
+        text-align:center;
+        h1{
+            padding: 0em 2em;
+            font-size: 24px;
+        }
+        p{
+            font-size: 20px;
+        }
+    }
+    .head_btn{
+        color: white;
+        display: inline-block;
+        background: linear-gradient( 180deg,violet,#993d99);
+        padding: 1em;
+        margin: 0px auto;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px 1px #a1a1a1;
+        cursor: pointer;
+    }
+}
+.operation{
+    padding-left: 2em;
+
+    .operation-box .oper-box{
+        position: relative;
+        display: flex;
+        align-content: space-around;
+        align-items: baseline;
+        width: 90%;
+        background: #f2f2f2;
+        margin: 1em;
+        border-radius: 30px;
+        box-shadow: 5px 5px 10px 0px #a1a1a1;
+    }
+    .oper-box .number-box{
+    
+        position: absolute;
+        left: -15px;
+        padding: 5px 10px;
+        color: white;
+        background-color:#9356dc;
+        border-radius: 20px;
+    } 
+    .oper-box .icon, h3{
+        padding-left: 2em;
+        }
+}
+
+// ***************** section carte ******************
+
+.content-card{
+    background-color: #f5f4f4;
+    .card-title{
+        padding: 10px 0px 0px 30px;
+        margin-left: 10px;
+    }
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em 1em;
+
+    .card-menu{
+        margin-bottom: 2em;
+        width: 90%;
+        background-color: white;
+        box-shadow: 5px 10px 15px 2px #d6d6d6;
+        border-radius: 20px 20px;
+    }
+    .card-menu img{
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+    }
+    .card-menu  p, h2{
+        margin: 10px 0px 10px 20px;
+    }
+}
+// ********************** footer **********************
