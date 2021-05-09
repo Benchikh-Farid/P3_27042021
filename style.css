@@ -90,10 +90,25 @@
     margin: 10px 0px 10px 20px; }
 
 .content-footer {
-  background-color: #9e9a9a; }
+  background-color: #353131; }
+  .content-footer a {
+    color: white; }
+  .content-footer .logo-footer {
+    padding-top: 30px;
+    padding-left: 40px; }
+    .content-footer .logo-footer img {
+      height: 25px;
+      filter: invert(1); }
 
 .list-footer {
-  list-style-type: none; }
+  padding-bottom: 20px; }
+  .list-footer .footer-link {
+    list-style: none;
+    margin-bottom: 0px; }
+    .list-footer .footer-link li {
+      padding-top: 10px; }
+    .list-footer .footer-link i {
+      padding-right: 10px; }
 
 body {
   margin: 0;

@@ -1,7 +1,27 @@
 .content-footer{
-background-color: rgb(158, 154, 154);
+    background-color: rgb(53, 49, 49);
+    a{
+        color: white;
+     }
+        .logo-footer{
+            padding-top: 30px;
+            padding-left: 40px;
+            img{
+            height: 25px;
+            filter: invert(1);
+            }
+        }     
 }
-
-.list-footer{
-    list-style-type: none;
-}
+     .list-footer{  
+         padding-bottom: 20px; 
+.footer-link {
+        list-style: none;
+        margin-bottom: 0px;
+        li{
+            padding-top: 10px;
+        }
+        i{
+            padding-right: 10px;
+        }
+    }   
+}  
