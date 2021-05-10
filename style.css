@@ -20,6 +20,18 @@
     padding: 10px 20px;
     background-color: transparent; }
 
+.logo-pages {
+  display: flex;
+  align-items: center;
+  padding: 1em 1em; }
+  .logo-pages .logo-img {
+    padding-left: 11em; }
+
+.back-img img {
+  height: 300px;
+  width: 100%;
+  object-fit: cover; }
+
 .reserve-head {
   background-color: #f5f4f4;
   padding: 1.5em;

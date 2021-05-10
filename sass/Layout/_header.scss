@@ -24,4 +24,17 @@
         background-color: transparent;
     }
 }
-// *********** page 2 ****************
+// *********** page a la francaise ****************
+.logo-pages{
+    display: flex;
+    align-items: center;
+    padding: 1em 1em;
+    .logo-img{
+        padding-left: 11em;
+    }
+}
+.back-img img{
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
