@@ -1,0 +1,16 @@
+.menu{
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    background: #ffff;
+    margin: 1em 1em 0em 0em;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px #a1a1a1; 
+    padding-left: 10px;
+    }
+    .menu-text{
+        width: 90%;
+        h3,p{
+            margin: 10px;
+        }
+    }
