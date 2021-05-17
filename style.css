@@ -76,6 +76,11 @@
   .operation .oper-box .icon, .operation h3 {
     padding-left: 2em; }
 
+@media screen and (min-width: 1040px) {
+  .operation .operation-box {
+    display: flex;
+    margin-inline-end: 1em; } }
+
 .content-card {
   background-color: #f5f4f4; }
   .content-card .card-title {
@@ -93,6 +98,10 @@
     background-color: white;
     box-shadow: 5px 10px 15px 2px #d6d6d6;
     border-radius: 20px 20px; }
+    @media screen and (min-width: 1040px) {
+      .cards .card-menu {
+        width: 46%;
+        margin: 1em; } }
   .cards .card-menu img {
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
@@ -100,6 +109,15 @@
     height: 180px; }
   .cards .card-menu p, .cards h2 {
     margin: 10px 0px 10px 20px; }
+  .cards .btn-commande {
+    display: flex;
+    justify-content: center;
+    padding: 2em; }
+  @media screen and (min-width: 1040px) {
+    .cards {
+      flex-direction: initial;
+      flex-wrap: wrap;
+      margin-inline-start: 1em; } }
 
 .section-menu {
   background-color: #f6f6f6;
@@ -154,21 +172,6 @@ body {
 a {
   text-decoration: none; }
 
-.menu {
-  display: flex;
-  align-content: space-between;
-  align-items: center;
-  background: #ffff;
-  margin: 1em 1em 0em 0em;
-  border-radius: 20px;
-  box-shadow: 5px 5px 10px 0px #a1a1a1;
-  padding-left: 10px; }
-
-.menu-text {
-  width: 90%; }
-  .menu-text h3, .menu-text p {
-    margin: 10px; }
-
 .head_btn {
   color: white;
   display: inline-block;
@@ -178,5 +181,19 @@ a {
   border-radius: 30px;
   box-shadow: 5px 5px 10px 1px #a1a1a1;
   cursor: pointer; }
+
+.menu {
+  display: flex;
+  align-content: space-between;
+  align-items: center;
+  background: #ffff;
+  margin: 1em 1em 0em 0em;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px 0px #a1a1a1;
+  padding-left: 10px; }
+  .menu .menu-text {
+    width: 90%; }
+    .menu .menu-text h3, .menu .menu-text p {
+      margin: 10px; }
 
 /*# sourceMappingURL=style.css.map */

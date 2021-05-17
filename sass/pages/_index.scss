@@ -16,7 +16,7 @@
 }
 .operation{
     padding-left: 2em;
-
+    
     .operation-box .oper-box{
         position: relative;
         display: flex;
@@ -39,9 +39,14 @@
     } 
     .oper-box .icon, h3{
         padding-left: 2em;
-        }
+        }    
 }
-
+.operation .operation-box{
+    @media screen and (min-width: 1040px){
+display: flex;
+margin-inline-end: 1em;
+}
+}
 // ***************** section carte ******************
 
 .content-card{
@@ -63,6 +68,11 @@
         background-color: white;
         box-shadow: 5px 10px 15px 2px #d6d6d6;
         border-radius: 20px 20px;
+        @media screen and (min-width: 1040px){
+            width: 46%;
+            margin: 1em;
+           
+            }
     }
     .card-menu img{
         border-radius: 20px 20px 0px 0px;
@@ -73,6 +83,18 @@
     .card-menu  p, h2{
         margin: 10px 0px 10px 20px;
     }
+    .btn-commande {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+@media screen and (min-width: 1040px){
+    flex-direction: initial;
+    flex-wrap: wrap;
+    margin-inline-start: 1em;
+    }
+    
+
 }
 // ***************** a la française ******************
 
@@ -99,7 +121,7 @@
 .title-menu{
     text-transform: uppercase;
 }
-.btn-commande{
+.btn-commande {
     display: flex;
     justify-content: center;
     padding: 2em;
