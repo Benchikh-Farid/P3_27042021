@@ -10,43 +10,45 @@
              height: 2em;
     }
 }
-.search__location{
+.search-location{
     padding-left: 2em;
     height: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #e6e6e6;
-   .input-location input{
+
+   &__input-location input{
         border: 0;
         padding: 10px 20px;
         background-color: transparent;
     }
 }
-// *********** page a la francaise ****************
+// *********** page restaurants ****************
 
 .head-pages{
     display: flex;
     flex-direction: column;
-    .back-img{
+    
+    &__logo-pages{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em 1em;
+       
+        &__logo-back{
+            position: absolute;
+            left: 30px;
+        }
+    }
+    &__back-img{
         z-index: -1;
     }
-   
-}
-
-.logo-pages{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1em 1em;
-   
-    .logo-back{
-        position: absolute;
-        left: 30px;
+    &__back-img img{
+        height: 300px;
+        width: 100%;
+        object-fit: cover;
     }
 }
-.back-img img{
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
-}
+
+

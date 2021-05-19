@@ -3,25 +3,27 @@
     a{
         color: white;
      }
-        .logo-footer{
-            padding-top: 30px;
-            padding-left: 40px;
-            img{
+    &__logo-footer{
+        padding-top: 30px;
+        padding-left: 40px;
+        img{
             height: 25px;
             filter: invert(1);
-            }
-        }     
-}
-     .list-footer{  
-         padding-bottom: 20px; 
-.footer-link {
+        }
+    }  
+    &__list-footer{  
+        padding-bottom: 20px; 
         list-style: none;
-        margin-bottom: 0px;
-        li{
-            padding-top: 10px;
-        }
-        i{
-            padding-right: 10px;
-        }
-    }   
-}  
+        &__footer-link {
+            list-style: none;
+            margin-bottom: 0px;
+            li{
+           padding-top: 10px;
+             }
+            i{
+           padding-right: 10px;
+            }
+        }   
+    }    
+}
+

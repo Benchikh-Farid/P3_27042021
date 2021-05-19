@@ -9,14 +9,14 @@
   .logo img {
     height: 2em; }
 
-.search__location {
+.search-location {
   padding-left: 2em;
   height: 2em;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #e6e6e6; }
-  .search__location .input-location input {
+  .search-location__input-location input {
     border: 0;
     padding: 10px 20px;
     background-color: transparent; }
@@ -24,39 +24,37 @@
 .head-pages {
   display: flex;
   flex-direction: column; }
-  .head-pages .back-img {
+  .head-pages__logo-pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em 1em; }
+    .head-pages__logo-pages__logo-back {
+      position: absolute;
+      left: 30px; }
+  .head-pages__back-img {
     z-index: -1; }
-
-.logo-pages {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1em 1em; }
-  .logo-pages .logo-back {
-    position: absolute;
-    left: 30px; }
-
-.back-img img {
-  height: 300px;
-  width: 100%;
-  object-fit: cover; }
+  .head-pages__back-img img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover; }
 
 .reserve-head {
   background-color: #f5f4f4;
   padding: 1.5em;
   text-align: center; }
-  .reserve-head .sub-head {
+  .reserve-head__sub-head {
     padding-top: 2em;
     text-align: center; }
-    .reserve-head .sub-head h1 {
+    .reserve-head__sub-head h1 {
       padding: 0em 2em;
       font-size: 24px; }
-    .reserve-head .sub-head p {
+    .reserve-head__sub-head p {
       font-size: 20px; }
 
 .operation {
   padding-left: 2em; }
-  .operation .operation-box .oper-box {
+  .operation__operation-box .oper-box {
     position: relative;
     display: flex;
     align-content: space-around;
@@ -66,17 +64,17 @@
     margin: 1em;
     border-radius: 30px;
     box-shadow: 5px 5px 10px 0px #a1a1a1; }
-  .operation .oper-box .number-box {
-    position: absolute;
-    left: -20px;
-    top: -7px;
-    padding: 5px 10px;
-    color: white;
-    background-color: #9356dc;
-    border-radius: 20px; }
-  .operation .oper-box .icon, .operation h3 {
-    padding-left: 1.2em;
-    font-size: 14px; }
+    .operation__operation-box .oper-box__number-box {
+      position: absolute;
+      left: -20px;
+      top: -7px;
+      padding: 5px 10px;
+      color: white;
+      background-color: #9356dc;
+      border-radius: 20px; }
+    .operation__operation-box .oper-box__icon, .operation__operation-box .oper-box h3 {
+      padding-left: 1.2em;
+      font-size: 14px; }
 
 @media screen and (min-width: 770px) {
   .operation .operation-box {
@@ -133,22 +131,22 @@
   background-color: #353131; }
   .content-footer a {
     color: white; }
-  .content-footer .logo-footer {
+  .content-footer__logo-footer {
     padding-top: 30px;
     padding-left: 40px; }
-    .content-footer .logo-footer img {
+    .content-footer__logo-footer img {
       height: 25px;
       filter: invert(1); }
-
-.list-footer {
-  padding-bottom: 20px; }
-  .list-footer .footer-link {
-    list-style: none;
-    margin-bottom: 0px; }
-    .list-footer .footer-link li {
-      padding-top: 10px; }
-    .list-footer .footer-link i {
-      padding-right: 10px; }
+  .content-footer__list-footer {
+    padding-bottom: 20px;
+    list-style: none; }
+    .content-footer__list-footer__footer-link {
+      list-style: none;
+      margin-bottom: 0px; }
+      .content-footer__list-footer__footer-link li {
+        padding-top: 10px; }
+      .content-footer__list-footer__footer-link i {
+        padding-right: 10px; }
 
 body {
   margin: 0;
@@ -157,7 +155,7 @@ body {
 a {
   text-decoration: none; }
 
-.head_btn {
+.btn {
   color: white;
   display: inline-block;
   background: linear-gradient(180deg, violet, #993d99);
@@ -176,9 +174,9 @@ a {
   border-radius: 20px;
   box-shadow: 5px 5px 10px 0px #a1a1a1;
   padding-left: 10px; }
-  .menu .menu-text {
+  .menu__menu-text {
     width: 90%; }
-    .menu .menu-text h3, .menu .menu-text p {
+    .menu__menu-text h3, .menu__menu-text p {
       margin: 10px; }
   @media screen and (min-width: 1100px) {
     .menu {
@@ -190,14 +188,14 @@ a {
   border-top-right-radius: 30px;
   margin-top: -50px;
   padding-left: 1em; }
-  .section-menu .sub-menu {
+  .section-menu__sub-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-family: 'Shrikhand';
     font-size: 1em;
     padding-top: 10px; }
-    .section-menu .sub-menu .fa-heart {
+    .section-menu__sub-menu .fa-heart {
       padding-right: 30px;
       font-size: 1.3em; }
   @media screen and (min-width: 1100px) {

@@ -4,7 +4,7 @@
     border-top-right-radius: 30px;
     margin-top: -50px;
     padding-left: 1em;
-    .sub-menu{
+    &__sub-menu{
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -16,6 +16,7 @@
           font-size: 1.3em;
       }
     } 
+
     .sub-card-menu{
         @media screen and (min-width: 1100px){
            display: flex;
@@ -26,6 +27,7 @@
 .title-menu{
     text-transform: uppercase;
 }
+
 .btn-commande {
     display: flex;
     justify-content: center;
