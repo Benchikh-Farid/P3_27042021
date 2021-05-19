@@ -75,11 +75,10 @@
     .operation__operation-box .oper-box__icon, .operation__operation-box .oper-box h3 {
       padding-left: 1.2em;
       font-size: 14px; }
-
-@media screen and (min-width: 770px) {
-  .operation .operation-box {
-    display: flex;
-    margin-inline-end: 1em; } }
+  @media screen and (min-width: 770px) {
+    .operation__operation-box {
+      display: flex;
+      margin-inline-end: 1em; } }
 
 .content-card {
   background-color: #f5f4f4; }
