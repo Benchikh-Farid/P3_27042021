@@ -1,0 +1,33 @@
+.section-menu{
+    background-color: #f6f6f6;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -50px;
+    padding-left: 1em;
+    .sub-menu{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'Shrikhand';
+        font-size: 1em;
+      padding-top: 10px;
+      .fa-heart{
+          padding-right: 30px;
+          font-size: 1.3em;
+      }
+    } 
+    .sub-card-menu{
+        @media screen and (min-width: 1100px){
+           display: flex;
+        }
+    }
+}
+
+.title-menu{
+    text-transform: uppercase;
+}
+.btn-commande {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}

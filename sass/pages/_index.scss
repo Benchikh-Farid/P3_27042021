@@ -31,18 +31,20 @@
     .oper-box .number-box{
     
         position: absolute;
-        left: -15px;
+        left: -20px;
+        top: -7px;
         padding: 5px 10px;
         color: white;
         background-color:#9356dc;
         border-radius: 20px;
     } 
     .oper-box .icon, h3{
-        padding-left: 2em;
+        padding-left: 1.2em;
+        font-size: 14px;
         }    
 }
 .operation .operation-box{
-    @media screen and (min-width: 1040px){
+    @media screen and (min-width: 770px){
 display: flex;
 margin-inline-end: 1em;
 }
@@ -68,10 +70,13 @@ margin-inline-end: 1em;
         background-color: white;
         box-shadow: 5px 10px 15px 2px #d6d6d6;
         border-radius: 20px 20px;
-        @media screen and (min-width: 1040px){
-            width: 46%;
+        @media screen and (min-width: 770px) and (max-width: 1099px){
+            width: 45%;
             margin: 1em;
-           
+            }
+            @media  screen and (min-width: 1100px) {
+                width: 40%;
+                margin: 1em;
             }
     }
     .card-menu img{
@@ -87,42 +92,14 @@ margin-inline-end: 1em;
     display: flex;
     justify-content: center;
     padding: 2em;
-}
-@media screen and (min-width: 1040px){
-    flex-direction: initial;
-    flex-wrap: wrap;
-    margin-inline-start: 1em;
     }
-    
-
-}
-// ***************** a la française ******************
-
-.section-menu{
-    background-color: #f6f6f6;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    margin-top: -50px;
-    padding-left: 1em;
-    .sub-menu{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-family: 'Shrikhand';
-        font-size: 1em;
-      padding-top: 10px;
-      .fa-heart{
-          padding-right: 30px;
-          font-size: 1.3em;
-      }
-    } 
-}
-
-.title-menu{
-    text-transform: uppercase;
-}
-.btn-commande {
-    display: flex;
-    justify-content: center;
-    padding: 2em;
+    @media screen and (min-width: 770px) and (max-width: 1099px){
+        flex-direction: initial;
+        flex-wrap: wrap;
+        margin-inline-start: 2em;
+    }
+    @media screen and (min-width: 1100px){
+        flex-direction: initial;
+        flex-wrap: nowrap;
+    }
 }
