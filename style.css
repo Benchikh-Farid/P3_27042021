@@ -20,6 +20,8 @@
     border: 0;
     padding: 10px 20px;
     background-color: transparent; }
+    .search-location__input-location input:focus {
+      border: 3px solid #f2eafb; }
 
 .head-pages {
   display: flex;
@@ -54,6 +56,8 @@
 
 .operation {
   padding-left: 2em; }
+  .operation__operation-box #oper-box-cd {
+    background: #f2eafd; }
   .operation__operation-box .oper-box {
     position: relative;
     display: flex;
@@ -61,13 +65,18 @@
     align-items: baseline;
     width: 90%;
     background: #f2f2f2;
-    margin: 1em;
+    padding: 16px;
+    margin: 2em;
     border-radius: 30px;
-    box-shadow: 5px 5px 10px 0px #a1a1a1; }
+    box-shadow: 5px 5px 10px 0px #a1a1a1;
+    transition-duration: 400ms; }
+    .operation__operation-box .oper-box:hover {
+      background: #f2eafb;
+      transform: scale(1.1); }
     .operation__operation-box .oper-box__number-box {
       position: absolute;
       left: -20px;
-      top: -7px;
+      top: 8px;
       padding: 5px 10px;
       color: white;
       background-color: #9356dc;
@@ -75,10 +84,12 @@
     .operation__operation-box .oper-box__icon, .operation__operation-box .oper-box h3 {
       padding-left: 1.2em;
       font-size: 14px; }
-  @media screen and (min-width: 770px) {
-    .operation__operation-box {
-      display: flex;
-      margin-inline-end: 1em; } }
+  .operation__operation-box {
+    margin-right: 3em; }
+    @media screen and (min-width: 960px) {
+      .operation__operation-box {
+        display: flex;
+        margin-inline-end: 1em; } }
 
 .content-card {
   background-color: #f5f4f4; }
@@ -91,27 +102,6 @@
   flex-direction: column;
   align-items: center;
   padding: 2em 1em; }
-  .cards .card-menu {
-    margin-bottom: 2em;
-    width: 90%;
-    background-color: white;
-    box-shadow: 5px 10px 15px 2px #d6d6d6;
-    border-radius: 20px 20px; }
-    @media screen and (min-width: 770px) and (max-width: 1099px) {
-      .cards .card-menu {
-        width: 45%;
-        margin: 1em; } }
-    @media screen and (min-width: 1100px) {
-      .cards .card-menu {
-        width: 40%;
-        margin: 1em; } }
-  .cards .card-menu img {
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-    width: 100%;
-    height: 180px; }
-  .cards .card-menu p, .cards h2 {
-    margin: 10px 0px 10px 20px; }
   .cards .btn-commande {
     display: flex;
     justify-content: center;
@@ -162,7 +152,38 @@ a {
   margin: 0px auto;
   border-radius: 30px;
   box-shadow: 5px 5px 10px 1px #a1a1a1;
-  cursor: pointer; }
+  cursor: pointer;
+  transition-duration: 400ms; }
+  .btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(180deg, rgba(153, 61, 153, 0.8), rgba(238, 130, 238, 0.8)); }
+
+.card-menu {
+  margin-bottom: 2em;
+  width: 90%;
+  background-color: white;
+  box-shadow: 5px 10px 15px 2px #d6d6d6;
+  border-radius: 20px 20px;
+  transition-duration: 700ms; }
+  .card-menu:hover {
+    transform: scale(1.1); }
+  @media screen and (min-width: 770px) and (max-width: 1099px) {
+    .card-menu {
+      width: 45%;
+      margin: 1em; } }
+  @media screen and (min-width: 1100px) {
+    .card-menu {
+      width: 40%;
+      margin: 1em; } }
+
+.card-menu img {
+  border-radius: 20px 20px 0px 0px;
+  object-fit: cover;
+  width: 100%;
+  height: 180px; }
+
+.card-menu p, h2 {
+  margin: 10px 0px 10px 20px; }
 
 .menu {
   display: flex;

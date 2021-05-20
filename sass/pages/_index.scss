@@ -18,6 +18,10 @@
 }
 .operation{
     padding-left: 2em;
+
+    &__operation-box #oper-box-cd{
+        background:#f2eafd ;
+    }
     
     &__operation-box .oper-box{
         position: relative;
@@ -26,15 +30,21 @@
         align-items: baseline;
         width: 90%;
         background: #f2f2f2;
-        margin: 1em;
+        padding: 16px;
+        margin: 2em;
         border-radius: 30px;
         box-shadow: 5px 5px 10px 0px #a1a1a1;
+        transition-duration: 400ms;
+        &:hover{
+            background: #f2eafb;
+            transform: scale(1.1);
+        }
 
         &__number-box{
     
             position: absolute;
             left: -20px;
-            top: -7px;
+            top: 8px;
             padding: 5px 10px;
             color: white;
             background-color:#9356dc;
@@ -45,8 +55,10 @@
             font-size: 14px;
             }  
     } 
+
     &__operation-box{
-        @media screen and (min-width: 770px){
+        margin-right: 3em;
+        @media screen and (min-width: 960px){
             display: flex;
             margin-inline-end: 1em;
             }
@@ -67,30 +79,6 @@
     align-items: center;
     padding: 2em 1em;
 
-    .card-menu{
-        margin-bottom: 2em;
-        width: 90%;
-        background-color: white;
-        box-shadow: 5px 10px 15px 2px #d6d6d6;
-        border-radius: 20px 20px;
-        @media screen and (min-width: 770px) and (max-width: 1099px){
-            width: 45%;
-            margin: 1em;
-            }
-            @media  screen and (min-width: 1100px) {
-                width: 40%;
-                margin: 1em;
-            }
-    }
-    .card-menu img{
-        border-radius: 20px 20px 0px 0px;
-        object-fit: cover;
-        width: 100%;
-        height: 180px;
-    }
-    .card-menu  p, h2{
-        margin: 10px 0px 10px 20px;
-    }
     .btn-commande {
     display: flex;
     justify-content: center;
