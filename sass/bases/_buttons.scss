@@ -1,15 +1,18 @@
 .btn{
     color: white;
+    
     display: inline-block;
-    background: linear-gradient( 180deg,rgb(238,130,238),rgb(153,61,153));
+    background: linear-gradient( 180deg,$secondary-color,$primary-color);
+    width: 30%;
+    text-align: center;
     padding: 1em;
-    margin: 0px auto;
     border-radius: 30px;
     box-shadow: 5px 5px 10px 1px #a1a1a1;
     cursor: pointer;
     transition-duration: 400ms;
     &:hover {
         transform: scale(1.1);
-        background:linear-gradient( 180deg,rgba(153,61,153,0.8),rgba(238,130,238,0.8));
+        background:linear-gradient( 180deg,$primary-color,$secondary-color);
+        opacity: 0.7;
     }
 }

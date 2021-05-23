@@ -46,12 +46,12 @@
     }
     &__back-img{
         z-index: -1;
-    }
-    &__back-img img{
-        height: 300px;
-        width: 100%;
-        object-fit: cover;
-    }
+        img{
+            height: 300px;
+            width: 100%;
+            object-fit: cover;
+        }
+    } 
 }
 
 

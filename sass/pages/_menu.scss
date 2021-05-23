@@ -23,13 +23,23 @@
         }
     }
 }
-
+.content-card-menu{
+    margin-top: 4em;
+}
 .title-menu{
     text-transform: uppercase;
+    border-bottom: 2px solid $tertiary-color;
+    width: 3em;
+   h3{
+       margin-bottom: 5px;
+   }
 }
 
 .btn-commande {
     display: flex;
     justify-content: center;
     padding: 2em;
+    a{
+        margin: 2em 0 4em 0;
+    }
 }

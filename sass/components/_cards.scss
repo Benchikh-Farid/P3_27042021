@@ -5,6 +5,46 @@
     box-shadow: 5px 10px 15px 2px #d6d6d6;
     border-radius: 20px 20px;
     transition-duration: 700ms;
+
+    img{
+        border-radius: 20px 20px 0px 0px;
+        object-fit: cover;
+        width: 100%;
+        height: 180px;
+    }
+    p,h3{
+        margin: 10px 0px 10px 20px;
+        color: black;
+    }
+   
+    &__content-text{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .fa-heart{
+        color: black;
+        padding: 1em;
+        font-size: 2em;
+    }
+    .card-menu-side{
+        position: relative;
+        .side-menu{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px;
+            background-color: $tertiary-color;
+            vertical-align: middle;
+            height: 40px;
+            border-radius: 2px;
+           
+            &__text{
+                color: green;
+            }
+        }
+    }
+    
     &:hover{
         transform: scale(1.1);
     }
@@ -16,23 +56,14 @@
             width: 40%;
             margin: 1em;
         }
-}
-.card-menu img{
-    border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
-    width: 100%;
-    height: 180px;
-}
-.card-menu  p, h2{
-    margin: 10px 0px 10px 20px;
-}
+}  
 
 
 // ******** carte des restaurant ******** //
 .menu{
     display: flex;
     align-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     background: #ffff;
     margin: 1em 1em 0em 0em;
     border-radius: 20px;
@@ -44,6 +75,9 @@
         h3,p{
             margin: 10px;
         }
+    }
+    &__menu-prix{
+        margin-bottom: 10px;
     }
     @media screen and (min-width: 1100px){
         width: 30%;
