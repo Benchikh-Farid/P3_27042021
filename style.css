@@ -187,10 +187,27 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-between; }
-  .card-menu .fa-heart {
-    color: black;
-    padding: 1em;
-    font-size: 2em; }
+  .card-menu .heart-like {
+    position: relative;
+    margin-right: 1em;
+    font-size: 2em;
+    color: grey; }
+    .card-menu .heart-like .first-icon {
+      opacity: 0.5;
+      position: absolute;
+      right: 0em;
+      bottom: 0px; }
+    .card-menu .heart-like .hover-icon {
+      position: absolute;
+      right: 0em;
+      bottom: 0px;
+      color: transparent;
+      opacity: 0.3; }
+    .card-menu .heart-like :hover {
+      background: linear-gradient(#FF79DA, #9356DC);
+      background-clip: text;
+      transition: color 700ms, opacity 1000ms;
+      opacity: 1; }
   .card-menu .card-menu-side {
     position: relative; }
     .card-menu .card-menu-side .side-menu {
@@ -247,9 +264,27 @@ a {
     font-family: 'Shrikhand';
     font-size: 1em;
     padding-top: 10px; }
-    .section-menu__sub-menu .fa-heart {
-      padding-right: 30px;
-      font-size: 1.3em; }
+    .section-menu__sub-menu .heart-like {
+      position: relative;
+      margin-right: 1em;
+      font-size: 2em;
+      color: grey; }
+      .section-menu__sub-menu .heart-like .first-icon {
+        opacity: 0.5;
+        position: absolute;
+        right: 0em;
+        bottom: 0px; }
+      .section-menu__sub-menu .heart-like .hover-icon {
+        position: absolute;
+        right: 0em;
+        bottom: 0px;
+        color: transparent;
+        opacity: 0.3; }
+      .section-menu__sub-menu .heart-like :hover {
+        background: linear-gradient(#FF79DA, #9356DC);
+        background-clip: text;
+        transition: color 700ms, opacity 1000ms;
+        opacity: 1; }
   @media screen and (min-width: 1100px) {
     .section-menu .sub-card-menu {
       display: flex; } }

@@ -22,10 +22,32 @@
         align-items: center;
         justify-content: space-between;
     }
-    .fa-heart{
-        color: black;
-        padding: 1em;
+    .heart-like{
+        position: relative;
+        margin-right: 1em;
         font-size: 2em;
+        color: grey;
+       
+        .first-icon{
+            opacity: 0.5;
+            position: absolute;
+            right: 0em;
+            bottom: 0px;
+        }
+        
+        .hover-icon{
+        position: absolute;
+        right: 0em;
+        bottom: 0px;
+        color: transparent;
+        opacity: 0.3;
+        }
+        :hover{
+            background: linear-gradient($secondary-color,$primary-color);
+            background-clip: text;
+            transition: color 700ms , opacity 1000ms ;
+            opacity: 1;
+        }  
     }
     .card-menu-side{
         position: relative;
