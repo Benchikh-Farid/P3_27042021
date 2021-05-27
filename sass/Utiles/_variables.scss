@@ -5,3 +5,74 @@ $tertiary-color:#99E2D0;
 
 $primary-police:'Shrikhand';
 $secondary-police:'roboto';
+
+
+
+@keyframes spinebtn {
+    0% {
+      transform: rotade(-90deg);
+    }
+  
+    20% {
+      transform: rotade(-75deg) ;
+    }
+  
+    40% {
+      transform: rotade(-60deg) ;
+    }
+  
+    60% {
+      transform: rotate(-45deg) ;
+    }
+  
+    80% {
+      transform: rotade(-30deg) ;
+    }
+    100% {
+      transform: rotate(0deg) ;
+    }
+  }
+
+//   ******** animation box *********
+
+  @keyframes slidebox {
+    0% {
+      transform: translate(50px, 0);
+    }
+  
+    50% {
+      transform: translate(20px, 0);
+    }
+    
+    100% {
+      transform: translate(0px, 0);
+    }
+  }
+
+  //  ************* anime loader **************
+
+  @keyframes spinloader {
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  }
+  
+  @keyframes spin{
+    0%{transform: rotate(0deg); }
+    100%{transform: rotate(360deg); }
+  }
+  @keyframes spinreverse{
+    0%{transform: rotate(0deg); }
+    100%{transform: rotate(-360deg); }
+  }
+
+
+  @keyframes fadein {
+    from {
+              transform: scale(0.1);
+    }
+    to {
+              transform: scale(1);
+    }
+  }

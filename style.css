@@ -1,5 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@keyframes spinebtn {
+  0% {
+    transform: rotade(-90deg); }
+  20% {
+    transform: rotade(-75deg); }
+  40% {
+    transform: rotade(-60deg); }
+  60% {
+    transform: rotate(-45deg); }
+  80% {
+    transform: rotade(-30deg); }
+  100% {
+    transform: rotate(0deg); } }
+@keyframes slidebox {
+  0% {
+    transform: translate(50px, 0); }
+  50% {
+    transform: translate(20px, 0); }
+  100% {
+    transform: translate(0px, 0); } }
+@keyframes spinloader {
+  100% {
+    opacity: 0;
+    z-index: -10; } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-360deg); } }
+@keyframes fadein {
+  from {
+    transform: scale(0.1); }
+  to {
+    transform: scale(1); } }
 .logo {
   margin: 2px 0px;
   width: 100%;
@@ -73,7 +112,7 @@
       width: 90%;
       background: #f2f2f2;
       padding: 16px;
-      margin: 2em;
+      margin: 1em;
       border-radius: 30px;
       box-shadow: 5px 5px 10px 0px #a1a1a1;
       transition-duration: 400ms; }
@@ -87,7 +126,7 @@
       .operation__operation-box .oper-box__icon {
         color: grey;
         padding-left: 1.2em;
-        font-size: 18px; }
+        font-size: 16px; }
       .operation__operation-box .oper-box:hover {
         background: #f2eafb;
         transform: scale(1.1); }
@@ -96,7 +135,7 @@
     .operation__operation-box h3 {
       color: black;
       padding-left: 1.2em;
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bolder; }
 
 .content-card {
@@ -156,7 +195,7 @@ a {
   color: white;
   display: inline-block;
   background: linear-gradient(180deg, #FF79DA, #9356DC);
-  width: 30%;
+  width: 60%;
   text-align: center;
   padding: 1em;
   border-radius: 30px;
@@ -168,6 +207,45 @@ a {
     background: linear-gradient(180deg, #9356DC, #FF79DA);
     opacity: 0.7; }
 
+@keyframes spinebtn {
+  0% {
+    transform: rotade(-90deg); }
+  20% {
+    transform: rotade(-75deg); }
+  40% {
+    transform: rotade(-60deg); }
+  60% {
+    transform: rotate(-45deg); }
+  80% {
+    transform: rotade(-30deg); }
+  100% {
+    transform: rotate(0deg); } }
+@keyframes slidebox {
+  0% {
+    transform: translate(50px, 0); }
+  50% {
+    transform: translate(20px, 0); }
+  100% {
+    transform: translate(0px, 0); } }
+@keyframes spinloader {
+  100% {
+    opacity: 0;
+    z-index: -10; } }
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes spinreverse {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-360deg); } }
+@keyframes fadein {
+  from {
+    transform: scale(0.1); }
+  to {
+    transform: scale(1); } }
 .card-menu {
   margin-bottom: 2em;
   width: 90%;
@@ -195,17 +273,18 @@ a {
     .card-menu .heart-like .first-icon {
       opacity: 0.5;
       position: absolute;
-      right: 0em;
-      bottom: 0px; }
+      right: -10px;
+      bottom: -15px; }
     .card-menu .heart-like .hover-icon {
       position: absolute;
-      right: 0em;
-      bottom: 0px;
+      right: -10px;
+      bottom: -15px;
       color: transparent;
       opacity: 0.3; }
     .card-menu .heart-like :hover {
       background: linear-gradient(#FF79DA, #9356DC);
       background-clip: text;
+      -webkit-background-clip: text;
       transition: color 700ms, opacity 1000ms;
       opacity: 1; }
   .card-menu .card-menu-side {
@@ -242,14 +321,49 @@ a {
   box-shadow: 5px 5px 10px 0px #a1a1a1;
   padding-left: 10px; }
   .menu__menu-text {
-    width: 90%; }
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
     .menu__menu-text h3, .menu__menu-text p {
-      margin: 10px; }
+      margin: 10px;
+      font-size: 1em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
   .menu__menu-prix {
-    margin-bottom: 10px; }
+    margin-bottom: 10px;
+    padding-right: 1.5em; }
+  .menu__checkbox {
+    display: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 30%;
+    height: 68px; }
+    .menu__checkbox i {
+      font-size: 20px;
+      color: white; }
   @media screen and (min-width: 1100px) {
     .menu {
       width: 30%; } }
+
+.menu:hover .menu__checkbox {
+  display: block;
+  background: #99E2D0;
+  max-width: 50px;
+  animation: slidebox ease 0.3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1; }
+
+.menu:hover .menu__checkbox i {
+  position: absolute;
+  left: 14px;
+  top: 28px;
+  background: #99E2D0;
+  animation: spinebtn ease-in-out 0.6s 1; }
+
+.sub-card-menu {
+  flex-wrap: wrap; }
 
 .section-menu {
   background-color: #f6f6f6;
@@ -283,7 +397,8 @@ a {
       .section-menu__sub-menu .heart-like :hover {
         background: linear-gradient(#FF79DA, #9356DC);
         background-clip: text;
-        transition: color 700ms, opacity 1000ms;
+        -webkit-background-clip: text;
+        transition: color 700ms, opacity 700ms;
         opacity: 1; }
   @media screen and (min-width: 1100px) {
     .section-menu .sub-card-menu {
@@ -305,5 +420,49 @@ a {
   padding: 2em; }
   .btn-commande a {
     margin: 2em 0 4em 0; }
+
+.spinloader {
+  animation: spinloader 2s 1s both;
+  background: rgba(255, 255, 255, 0.7);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  text-align: center;
+  z-index: 100; }
+  .spinloader::before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+
+.loader {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  top: 30px;
+  position: relative; }
+
+.loader-double {
+  border: 4px solid transparent;
+  border-top-color: #9356DC;
+  border-bottom-color: #9356DC;
+  border-radius: 50px;
+  animation: spin 1s linear 3; }
+
+.loader-double::after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  bottom: 5px;
+  right: 5px;
+  border: 3px solid transparent;
+  border-top-color: #FF79DA;
+  border-bottom-color: #FF79DA;
+  border-radius: 50px;
+  opacity: 0.7;
+  animation: spinreverse 2s linear 3; }
 
 /*# sourceMappingURL=style.css.map */

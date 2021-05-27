@@ -1,3 +1,6 @@
+.sub-card-menu{
+    flex-wrap: wrap;
+}
 .section-menu{
     background-color: #f6f6f6;
     border-top-left-radius: 30px;
@@ -35,7 +38,8 @@
         :hover{
             background: linear-gradient($secondary-color,$primary-color);
             background-clip: text;
-            transition: color 700ms , opacity 1000ms ;
+            -webkit-background-clip: text;
+            transition: color 700ms , opacity 700ms ;
             opacity: 1;
         }  
     }
@@ -50,6 +54,8 @@
 .content-card-menu{
     margin-top: 4em;
 }
+
+
 .title-menu{
     text-transform: uppercase;
     border-bottom: 2px solid $tertiary-color;

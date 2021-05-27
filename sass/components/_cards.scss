@@ -1,3 +1,5 @@
+@import "../Utiles/variables";
+
 .card-menu{
     margin-bottom: 2em;
     width: 90%;
@@ -31,20 +33,21 @@
         .first-icon{
             opacity: 0.5;
             position: absolute;
-            right: 0em;
-            bottom: 0px;
+            right: -10px;
+            bottom: -15px;
         }
         
         .hover-icon{
         position: absolute;
-        right: 0em;
-        bottom: 0px;
+        right: -10px;
+        bottom: -15px;
         color: transparent;
         opacity: 0.3;
         }
         :hover{
             background: linear-gradient($secondary-color,$primary-color);
             background-clip: text;
+            -webkit-background-clip: text;
             transition: color 700ms , opacity 1000ms ;
             opacity: 1;
         }  
@@ -82,6 +85,7 @@
 
 
 // ******** carte des restaurant ******** //
+
 .menu{
     display: flex;
     align-content: space-between;
@@ -91,17 +95,54 @@
     border-radius: 20px;
     box-shadow: 5px 5px 10px 0px #a1a1a1; 
     padding-left: 10px;
-    
     &__menu-text{
-        width: 90%;
+        width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+         white-space: nowrap;
         h3,p{
             margin: 10px;
+            font-size: 1em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
     &__menu-prix{
         margin-bottom: 10px;
+        padding-right: 1.5em;
     }
+
+    &__checkbox{
+        display: none;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+        width: 30%;
+        height: 68px;
+        i{
+            font-size: 20px;
+            color: white; 
+        }  
+    }
+    
     @media screen and (min-width: 1100px){
         width: 30%;
      }
-}  
+} 
+
+.menu:hover .menu__checkbox {
+    display: block;
+    background: $tertiary-color;
+    max-width: 50px;
+    animation: slidebox ease 0.3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+  }
+  
+   .menu:hover .menu__checkbox i{
+    position: absolute;
+    left: 14px;
+    top: 28px;
+    background: $tertiary-color;
+    animation: spinebtn ease-in-out 0.6s 1;
+  }
