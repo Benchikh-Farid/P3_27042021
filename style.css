@@ -16,7 +16,9 @@
 @keyframes slidebox {
   0% {
     transform: translate(50px, 0); }
-  50% {
+  35% {
+    transform: translate(35px, 0); }
+  75% {
     transform: translate(20px, 0); }
   100% {
     transform: translate(0px, 0); } }
@@ -223,7 +225,9 @@ a {
 @keyframes slidebox {
   0% {
     transform: translate(50px, 0); }
-  50% {
+  35% {
+    transform: translate(35px, 0); }
+  75% {
     transform: translate(20px, 0); }
   100% {
     transform: translate(0px, 0); } }
@@ -360,7 +364,7 @@ a {
   left: 14px;
   top: 28px;
   background: #99E2D0;
-  animation: spinebtn ease-in-out 0.6s 1; }
+  animation: spinebtn ease 0.4s 1; }
 
 .sub-card-menu {
   flex-wrap: wrap; }
@@ -464,5 +468,9 @@ a {
   border-radius: 50px;
   opacity: 0.7;
   animation: spinreverse 2s linear 3; }
+
+.animfid {
+  animation: fadein 1s linear;
+  animation-delay: 0.1s; }
 
 /*# sourceMappingURL=style.css.map */
