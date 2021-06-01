@@ -1,4 +1,4 @@
-@import "../Utiles/variables";
+
 
 .card-menu{
     margin-bottom: 2em;
@@ -44,11 +44,11 @@
         color: transparent;
         opacity: 0.3;
         }
-        :hover{
+        :hover {
             background: linear-gradient($secondary-color,$primary-color);
             background-clip: text;
             -webkit-background-clip: text;
-            transition: color 700ms , opacity 1000ms ;
+            transition: 700ms ease  ;
             opacity: 1;
         }  
     }
@@ -87,6 +87,7 @@
 // ******** carte des restaurant ******** //
 
 .menu{
+    position: relative;
     display: flex;
     align-content: space-between;
     align-items: flex-end;
@@ -95,6 +96,7 @@
     border-radius: 20px;
     box-shadow: 5px 5px 10px 0px #a1a1a1; 
     padding-left: 10px;
+    overflow: hidden;
     &__menu-text{
         width: 100%;
         overflow: hidden;
@@ -114,14 +116,20 @@
     }
 
     &__checkbox{
-        display: none;
+        position: absolute;
+        right: 0;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
-        width: 30%;
+        width: 50px;
         height: 68px;
+        background: $tertiary-color;
+        transform:translatex(50px);
         i{
             font-size: 20px;
             color: white; 
+            position: absolute;
+            left: 14px;
+            top: 28px;
         }  
     }
     
@@ -131,18 +139,52 @@
 } 
 
 .menu:hover .menu__checkbox {
-    display: block;
-    background: $tertiary-color;
     max-width: 50px;
-    animation: slidebox ease 0.3s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
+    overflow: hidden;
+    animation: slidebox ease 0.5s forwards;
+     
   }
-  
+  .menu:hover .menu__menu-prix{
+    min-width: 70px;
+    animation: slidebox ease 0.3s;
+  }
    .menu:hover .menu__checkbox i{
-    position: absolute;
-    left: 14px;
-    top: 28px;
     background: $tertiary-color;
-    animation: spinebtn ease 0.4s 1;
+    animation: spinebtn ease-in 0.4s .1s 1;
+  }
+
+  @keyframes spinebtn {
+    0% {
+      transform: rotate(-90deg);
+    }
+  
+    20% {
+      transform: rotate(-75deg) ;
+    }
+  
+    40% {
+      transform: rotate(-60deg) ;
+    }
+  
+    60% {
+      transform: rotate(-45deg) ;
+    }
+  
+    80% {
+      transform: rotate(-30deg) ;
+    }
+    100% {
+      transform: rotate(0deg) ;
+    }
+  }
+
+//   ******** animation box *********
+
+  @keyframes slidebox {
+    0% {
+      transform: translate(50px, 0);
+    }
+    100% {
+      transform: translate(0px, 0);
+    }
   }
