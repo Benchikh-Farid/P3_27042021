@@ -76,16 +76,62 @@
     // *************** animecard ****************
 
     .animfid{
-      animation: fadein 1s linear;
-      animation-delay: 0.1s;
+      animation: fadein 1s ease-in;
     }
 
+    .animfid1{
+      animation: fadein1 1s ease-in;
+      transition: opacity 0.3;
+    }
+
+    .animfid2{
+      animation: fadein2 1s ease-in;
+      transition: opacity 0.8;
+    }
+
+
     @keyframes fadein {
-      from {
-                transform: scale(0.1);
+      0% {
+                transform: translateY(15px);
+                opacity: 0;
       }
-      to {
-                transform: scale(1);
+      100% {
+                transform: translateY(1px);
+                opacity: 1;
+      }
+    }
+
+    @keyframes fadein1 {
+      0% {
+                transform: translateY(15px);
+                opacity: 0;
+      }
+      50%{
+                transform: translateY(7px);
+                opacity: 0;
+      }
+      100% {
+                transform: translateY(1px);
+                opacity: 1;
+      }
+    }
+    @keyframes fadein2 {
+      0% {
+                transform: translateY(15px);
+                opacity: 0;
+      }
+      30%{
+                transform: translateY(7px);
+                opacity: 0;
+      }
+      70%{
+          transform: translateY(3px);
+                opacity: 0;
+      }
+
+      100% {
+                transform: translateY(1px);
+                opacity: 1;
       }
     }
   
